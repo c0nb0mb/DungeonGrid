@@ -32,8 +32,8 @@ body {
   display: flex;             /* enables flexbox for the image container */
   justify-content: center;   /* centers image horizontally */
   align-items: center;       /* centers image vertically */
-  width: 250px;              /* fixed container width */
-  height: 250px;             /* fixed container height */
+  width: 500px;              /* fixed container width */
+  height: 500px;             /* fixed container height */
   overflow: hidden;          /* hides overflow */
   margin-top: 20px;          /* optional spacing */
 }
