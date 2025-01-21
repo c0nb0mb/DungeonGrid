@@ -2,18 +2,12 @@ body {
   background-color: black;   /* sets background color to black */
   color: white;              /* sets text (foreground) color to white */
   width: 960px;              /* limits the total width to 960px */
-  margin: 0 auto;            /* centers the body within the browser window */
-  display: flex;             /* enables flexbox for centering */
-  justify-content: center;   /* centers horizontally */
-  align-items: center;       /* centers vertically */
-  min-height: 100vh;         /* ensures the body takes up full viewport height */
-  flex-direction: column;    /* stacks elements vertically */
+  margin: 0 auto;            /* centers the body horizontally */
+  font-family: 'Jua', sans-serif; /* Applies Jua font to all text by default */
 }
 
 .title {
-  font-family: "Sedgwick Ave Display", serif;
-  font-weight: 400;
-  font-size: 1000%;
+  font-size: 1000%;          /* Keeps the large font size for the title */
   text-align: center;
   margin: 0;
   padding-top: 20px;
@@ -21,7 +15,7 @@ body {
 }
 
 .subtitle {
-  font-size: 300%;
+  font-size: 300%;           /* Keeps the font size for the subtitle */
   text-align: center;
   margin: 0;
   line-height: 1;
@@ -31,11 +25,11 @@ body {
 .img-container {
   display: flex;             /* enables flexbox for the image container */
   justify-content: center;   /* centers image horizontally */
-  align-items: center;       /* centers image vertically */
-  width: 500px;              /* fixed container width */
-  height: 500px;             /* fixed container height */
+  margin: 0 auto;            /* centers the container horizontally */
+  margin-top: 50px;          /* adds spacing from the top */
+  width: 250px;              /* fixed container width */
+  height: 250px;             /* fixed container height */
   overflow: hidden;          /* hides overflow */
-  margin-top: 20px;          /* optional spacing */
 }
 
 .img-fill {
