@@ -1,48 +1,46 @@
-/* CSS Document */
-
 body {
   background-color: black;   /* sets background color to black */
-  color: white;             /* sets text (foreground) color to white */
-  width: 960px;            /* limits the total width to 1024px */
-  margin: 0 auto;           /* centers the body within the browser window */
-}
-
-
-.sedgwick-ave-display-regular {
-  font-family: "Sedgwick Ave Display", serif;
-  font-weight: 400;
-  font-style: normal;
+  color: white;              /* sets text (foreground) color to white */
+  width: 960px;              /* limits the total width to 960px */
+  margin: 0 auto;            /* centers the body within the browser window */
+  display: flex;             /* enables flexbox for centering */
+  justify-content: center;   /* centers horizontally */
+  align-items: center;       /* centers vertically */
+  min-height: 100vh;         /* ensures the body takes up full viewport height */
+  flex-direction: column;    /* stacks elements vertically */
 }
 
 .title {
   font-family: "Sedgwick Ave Display", serif;
   font-weight: 400;
-  font-style: normal;
   font-size: 1000%;
   text-align: center;
-  padding-top: 50px;
-  margin: 0;     
-  line-height: 1;    
+  margin: 0;
+  padding-top: 20px;
+  line-height: 1;
 }
 
 .subtitle {
   font-size: 300%;
   text-align: center;
-  margin: 0;         
-  line-height: 1;    
+  margin: 0;
+  line-height: 1;
   padding-bottom: 25px;
 }
 
 .img-container {
-  width: 250px;
-  height: 250px;
-  overflow: hidden;
+  display: flex;             /* enables flexbox for the image container */
+  justify-content: center;   /* centers image horizontally */
+  align-items: center;       /* centers image vertically */
+  width: 250px;              /* fixed container width */
+  height: 250px;             /* fixed container height */
+  overflow: hidden;          /* hides overflow */
+  margin-top: 20px;          /* optional spacing */
 }
 
 .img-fill {
-  width: 100%;
+  width: 100%;               /* ensures the image scales proportionally */
   height: 100%;
-  object-fit: contain;
-  object-position: 50% 50%;
+  object-fit: contain;        /* keeps the image contained without distortion */
   display: block;
 }
