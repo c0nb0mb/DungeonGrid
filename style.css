@@ -1,28 +1,29 @@
 body {
-  background-color: black; /* Sets the background to black */
-  margin: 0; /* Removes default margin around the body */
-  height: 100vh; /* Makes the body fill the full viewport height */
-  display: flex; /* Enables flexbox for centering content */
+  background-color: black; /* Set the background color to black */
+  margin: 0; /* Remove default margin */
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Enables flexbox for centering */
   justify-content: center; /* Centers content horizontally */
   align-items: center; /* Centers content vertically */
-  font-family: 'Jua', sans-serif; /* Applies the Jua font */
+  font-family: 'Jua', sans-serif; /* Apply your font */
   color: white; /* Ensures text is visible */
-  text-align: center; /* Centers text alignment */
+  text-align: center; /* Centers the text */
 }
 
 .img-container {
-  height: 100%; /* Locks the container to the full viewport height */
-  display: flex; /* Ensures the image is centered inside the container */
-  justify-content: center;
-  align-items: center;
+  height: 100%; /* Image container takes full viewport height */
+  display: flex; /* Center the image inside the container */
+  justify-content: center; /* Horizontally center the image */
+  align-items: center; /* Vertically center the image */
+  overflow: hidden; /* Prevents overflow if the image is larger */
 }
 
 .img-fill {
-  height: 100%; /* Makes the image as tall as the viewport */
-  width: auto; /* Adjusts width proportionally to the height */
-  object-fit: contain; /* Ensures the image is not distorted */
+  height: 100vh; /* Makes the image as tall as the viewport */
+  width: auto; /* Adjusts the width proportionally to the height */
+  object-fit: contain; /* Ensures image maintains its aspect ratio */
 }
 
 .title, .subtitle, p {
-  margin: 10px 0; /* Adds consistent spacing */
+  margin: 10px 0; /* Adds some space around text */
 }
