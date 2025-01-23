@@ -12,6 +12,7 @@ body {
   font-family: 'Jua', sans-serif; /* Apply your font */
   color: white; /* Ensures text is visible */
   text-align: center; /* Centers text alignment */
+  position: relative; /* Position content relative to the page */
 }
 
 .title {
