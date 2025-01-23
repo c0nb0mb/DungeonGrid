@@ -1,27 +1,28 @@
 body {
   background-image: url('IMG_2752.png'); /* Set the image as the background */
-  background-size: contain; /* Scales the image to fit within the page without stretching */
-  background-position: center top; /* Centers the image horizontally and aligns it at the top */
+  background-size: contain; /* Scale the image to fit within the page while maintaining aspect ratio */
+  background-position: top center; /* Align the image at the top center of the page */
   background-repeat: no-repeat; /* Prevents tiling */
+  background-color: black; /* Ensures the background color is black */
   margin: 0; /* Remove default margin */
   height: 100vh; /* Full viewport height */
-  display: flex; /* Enables flexbox for centering text */
+  display: flex; /* Flexbox to align content */
   flex-direction: column; /* Stack content vertically */
-  justify-content: flex-start; /* Align content to the top of the page */
-  align-items: center; /* Horizontally center the text */
+  justify-content: flex-start; /* Align content at the top of the page */
+  align-items: center; /* Center the content horizontally */
   font-family: 'Jua', sans-serif; /* Apply your font */
-  color: white; /* Ensures text is visible */
-  text-align: center; /* Centers text alignment */
+  color: white; /* Ensure text is visible */
+  text-align: center; /* Center the text horizontally */
   position: relative; /* Position content relative to the page */
 }
 
 .title {
-  font-size: 5rem; /* Adjust title font size */
+  font-size: 5rem; /* Title font size */
   margin-top: 20px; /* Space from the top */
 }
 
 .subtitle {
-  font-size: 2rem; /* Adjust subtitle font size */
+  font-size: 2rem; /* Subtitle font size */
 }
 
 h1, p {
@@ -29,6 +30,6 @@ h1, p {
 }
 
 h1 {
-  font-size: 3rem; /* Adjust font size for the heading */
+  font-size: 3rem; /* Font size for the h1 */
   margin-top: 20px; /* Space above the heading */
 }
