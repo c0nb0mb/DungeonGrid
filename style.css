@@ -46,7 +46,7 @@ h1 {
 }
 
 p {
-    font-size: 2vw; /* Scales the paragraph text */
+    font-size: .7vw; /* Scales the paragraph text */
     margin: 10px 0;
 }
 
