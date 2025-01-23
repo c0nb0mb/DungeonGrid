@@ -1,28 +1,33 @@
 body {
-  background-color: black; /* Set the background color to black */
+  background-image: url('IMG_2752.png'); /* Set the image as the background */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
   margin: 0; /* Remove default margin */
-  display: flex; /* Enables flexbox for centering */
-  justify-content: center; /* Centers content horizontally */
-  align-items: center; /* Centers content vertically */
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Enables flexbox for centering text */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: flex-start; /* Align content to the top of the page */
+  align-items: center; /* Horizontally center the text */
   font-family: 'Jua', sans-serif; /* Apply your font */
   color: white; /* Ensures text is visible */
-  text-align: center; /* Centers the text */
+  text-align: center; /* Centers text alignment */
 }
 
-.img-container {
-  height: 100%; /* Image container takes full viewport height */
-  display: flex; /* Center the image inside the container */
-  justify-content: center; /* Horizontally center the image */
-  align-items: center; /* Vertically center the image */
-  overflow: hidden; /* Prevents overflow if the image is larger */
+.title {
+  font-size: 5rem; /* Adjust title font size */
+  margin-top: 20px; /* Space from the top */
 }
 
-.img-fill {
-  height: 100vh; /* Makes the image as tall as the viewport */
-  width: auto; /* Adjusts the width proportionally to the height */
-  object-fit: contain; /* Ensures image maintains its aspect ratio */
+.subtitle {
+  font-size: 2rem; /* Adjust subtitle font size */
 }
 
-.title, .subtitle, p {
-  margin: 10px 0; /* Adds some space around text */
+h1, p {
+  margin: 10px 0; /* Adds space around text */
+}
+
+h1 {
+  font-size: 3rem; /* Adjust font size for the heading */
+  margin-top: 20px; /* Space above the heading */
 }
