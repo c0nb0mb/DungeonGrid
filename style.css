@@ -2,7 +2,7 @@ html, body {
     background-image: url('IMG_2752.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 50vh 100vh;
+    background-size: 500px 1000px;
     justify-content: flex-start; /* Ensures the text stays at the top */
     align-items: center; /* Centers the text horizontally */
     font-family: 'Jua', sans-serif; /* Font styling */
