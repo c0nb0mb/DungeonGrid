@@ -1,49 +1,88 @@
 html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     background-image: url('IMG_2752.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 40% 100%;
-    justify-content: flex-start; /* Ensures the text stays at the top */
-    align-items: center; /* Centers the text horizontally */
-    font-family: 'Jua', sans-serif; /* Font styling */
-    color: white; /* White text for visibility */
-    background-color: black; /* Black background for extra space */
-    background-position: center; /* Centers the image in the background */
+    background-size: auto 100%; /* Maintains aspect ratio and height */
+    background-position: center;
+    font-family: 'Jua', sans-serif;
+    color: white;
+    background-color: black; /* Fills extra space with black */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers text horizontally */
+    justify-content: flex-start; /* Keeps content at the top */
+    text-align: center; /* Centers text */
 }
 
 body {
-    position: relative; /* Ensures child elements can use relative positioning */
+    position: relative; /* Allows child elements to use relative positioning */
 }
 
 .background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; /* Allows the image width to scale */
-    height: 100%; /* Fits the viewport height */
-    object-fit: contain; /* Ensures the image maintains its aspect ratio */
-    z-index: -1; /* Pushes the image behind the text */
+    display: none; /* Background image is handled by the CSS background property */
 }
 
 .content {
-    position: relative; /* Ensures the text is on top of the image */
-    text-align: center; /* Centers the text horizontally */
-    margin-top: 20px; /* Adds spacing for the title */
-    z-index: 1; /* Ensures the text is above the image */
+    position: relative;
+    z-index: 1; /* Ensures the text is on top */
+    padding: 20px; /* Adds padding for smaller screens */
 }
 
 .title {
-    font-size: 7rem; /* Adjusts the title size */
+    font-size: 5vw; /* Responsive font size relative to viewport width */
+    margin: 0;
 }
 
 .subtitle {
-    font-size: 2rem; /* Adjusts the subtitle size */
-}
-
-h1, p {
-    margin: 10px 0; /* Adds consistent spacing between text */
+    font-size: 3vw; /* Adjusts size for smaller screens */
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3vw; /* Scales the main heading text */
+    margin: 10px 0;
+}
+
+p {
+    font-size: 2vw; /* Scales the paragraph text */
+    margin: 10px 0;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    html, body {
+        background-size: cover; /* Adjusts background to cover smaller screens */
+    }
+
+    .title {
+        font-size: 8vw; /* Larger text for small screens */
+    }
+
+    .subtitle {
+        font-size: 4vw;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 10px; /* Reduces padding for very small screens */
+    }
+
+    .title {
+        font-size: 10vw; /* Further adjusts text for very small screens */
+    }
+
+    h1, p {
+        font-size: 4vw;
+    }
 }
